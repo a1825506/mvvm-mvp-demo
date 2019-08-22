@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <declare-styleable name="MyTextView">
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension|reference"/>
+        <attr name="text" format="string|reference"/>
+    </declare-styleable>
+
+
     <declare-styleable name="MagicTextView">
         <attr name="innerShadowColor" format="color"/>
         <attr name="innerShadowRadius" format="dimension"/>

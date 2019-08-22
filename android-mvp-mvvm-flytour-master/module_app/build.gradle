@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-
+    compileSdkVersion 26
     defaultConfig {
         applicationId "com.fly.tour"
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -20,6 +19,7 @@ android {
     dataBinding {
         enabled true
     }
+    buildToolsVersion '26.0.2'
 }
 
 dependencies {
