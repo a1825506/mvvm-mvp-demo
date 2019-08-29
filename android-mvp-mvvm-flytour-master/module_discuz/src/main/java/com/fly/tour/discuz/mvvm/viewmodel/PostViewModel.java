@@ -2,6 +2,7 @@ package com.fly.tour.discuz.mvvm.viewmodel;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
+import android.util.ArrayMap;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.news.entity.NewsDetail;
@@ -37,7 +38,7 @@ public class PostViewModel extends BaseRefreshViewModel<PostDataBean,PostModel> 
             return;
         }
 
-        Map map = new HashMap<>();
+        ArrayMap map = new ArrayMap<>();
 
         map.put("index", 1);
 
@@ -91,9 +92,8 @@ public class PostViewModel extends BaseRefreshViewModel<PostDataBean,PostModel> 
     @Override
     public void loadMore() {
 
-        Map map = new HashMap<>();
-
-
+        ArrayMap map = new ArrayMap<>();
+        
         map.put("index", 2);
 
         map.put("cate", 1);

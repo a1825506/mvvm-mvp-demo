@@ -2,17 +2,13 @@ package com.fly.tour.api;
 
 import android.app.Application;
 import android.content.Context;
-
 import com.fly.tour.api.bean.HttpHeadBean;
 import com.fly.tour.api.config.API;
 import com.fly.tour.api.util.SSLContextUtil;
 import com.google.gson.Gson;
-
 import java.io.IOException;
-
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
-
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

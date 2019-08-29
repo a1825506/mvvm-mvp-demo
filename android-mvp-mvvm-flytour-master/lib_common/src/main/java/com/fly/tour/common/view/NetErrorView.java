@@ -3,6 +3,7 @@ package com.fly.tour.common.view;
 import android.content.Context;
 import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 import com.fly.tour.common.R;
@@ -29,6 +30,9 @@ public class NetErrorView extends RelativeLayout {
                 }
             }
         });
+
+
+
         mRlNetWorkError = findViewById(R.id.rl_net_error_root);
     }
     public void setRefreshBtnClickListener(OnClickListener listener){

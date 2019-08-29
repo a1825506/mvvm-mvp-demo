@@ -14,7 +14,6 @@ public class MyApplication extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        //NewsDBManager.getInstance(this).initNewsDB();
         RetrofitManager.init(this);
     }
 }

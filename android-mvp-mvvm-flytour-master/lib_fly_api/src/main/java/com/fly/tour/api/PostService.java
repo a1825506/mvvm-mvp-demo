@@ -1,5 +1,7 @@
 package com.fly.tour.api;
 
+import android.util.ArrayMap;
+
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.news.entity.NewsDetailBean;
 import com.fly.tour.api.post.PostDataBean;
@@ -15,6 +17,6 @@ import retrofit2.http.POST;
 public interface PostService {
     @POST("api/app/communityIndexApi")
     @FormUrlEncoded
-    Observable<RespDTO<PostTotalDataBean>> getListPostByType(@FieldMap Map<String, String> map);
+    Observable<RespDTO<PostTotalDataBean>> getListPostByType(@FieldMap ArrayMap<String, String> map);
 
 }

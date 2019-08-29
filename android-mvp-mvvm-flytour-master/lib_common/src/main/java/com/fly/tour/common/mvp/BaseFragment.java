@@ -235,9 +235,9 @@ public abstract class BaseFragment extends Fragment implements BaseView {
         if (mNetErrorView == null) {
             View view = mViewStubError.inflate();
             mNetErrorView = view.findViewById(R.id.view_net_error);
-            mNetErrorView.setOnClickListener(new View.OnClickListener() {
+            mNetErrorView.setRefreshBtnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
+                public void onClick(View view) {
                     if (!NetUtil.checkNetToast()) {
                         return;
                     }

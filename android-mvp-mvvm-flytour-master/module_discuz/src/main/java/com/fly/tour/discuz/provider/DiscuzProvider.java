@@ -7,13 +7,14 @@ import android.support.v4.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.fly.tour.common.provider.IDiscuzProvider;
 import com.fly.tour.discuz.Fragment.MainDiscuzFragment;
+import com.fly.tour.discuz.Fragment.MainDiscuzFragment1;
 
 @Route(path = "/discuz/main",name = "社区")
 public class DiscuzProvider implements IDiscuzProvider {
 
     @Override
     public Fragment getDiscuzFragment() {
-        return MainDiscuzFragment.newInstance();
+        return MainDiscuzFragment1.newInstance();
     }
 
     @Override

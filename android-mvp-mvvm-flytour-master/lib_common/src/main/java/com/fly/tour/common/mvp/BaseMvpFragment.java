@@ -21,7 +21,7 @@ public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresen
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        injectPresenter();
+        mPresenter =  injectPresenter();
         if(mPresenter != null){
             mPresenter.injectLifecycle(mActivity);
         }
@@ -34,5 +34,5 @@ public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresen
         }
         super.onDestroy();
     }
-    public abstract void injectPresenter();
+    public abstract P injectPresenter();
 }
